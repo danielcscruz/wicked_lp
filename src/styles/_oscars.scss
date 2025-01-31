@@ -1,0 +1,27 @@
+.oscars{
+    padding: 10px 50px;
+    color: silver;
+    margin-bottom: 60px;
+    
+    &__container{
+        display: block;
+        width: 100%;
+        align-items: center;
+
+        &__nominations{
+            display: block;
+            text-align: center;
+            justify-content: center;
+
+            &__nom{
+                h3{
+                    font-family: PT Serif, serif;
+                    font-size: 1.2em;
+                    font-weight: 200;   
+                    margin-top: 4px;                 
+                }
+            }
+            
+        }
+    }
+}

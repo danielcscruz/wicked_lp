@@ -1,0 +1,69 @@
+@use 'cores';
+
+.songs{
+    padding: 10px 50px;
+    display: block;
+
+    &__container{
+        display: block;
+        justify-content: space-around;
+        margin: 20px 0;
+        
+
+        &__songs{
+            ul{
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        &__lyrics{
+            margin-top: 20px;
+            text-align: center;
+            color: cores.$corRosaPrincial;
+            justify-content: center;
+            font-family: PT Serif, serif ;
+            
+            &__song{
+                p{
+                    display: none;
+                    padding: 0 100px;
+                }
+                &--is-active{
+                    p{
+                        display: block;
+                    }
+                }
+            }
+            
+
+            
+        }
+    }
+}
+
+.btn-tab{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: silver;
+    margin: 0 10px;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.8em;
+    font-weight: 200;
+    flex-wrap: wrap;
+    cursor: pointer;
+
+    &:hover{
+        border-bottom: cores.$corRosaPrincial 2px solid;
+    }
+
+    &--is-active{
+        color: cores.$corRosaPrincial;
+        border-bottom: cores.$corRosaPrincial 2px solid;
+    }
+}

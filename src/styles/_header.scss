@@ -1,0 +1,22 @@
+@use 'cores';
+
+.header{
+    position: sticky;
+    top: 0 ;
+    left: 0;
+    background-color: rgb(cores.$corFundo,0.9);
+    transition: opacity .5s ease;
+    z-index: 1;
+    
+
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            margin: 10px auto;
+            height: 100px;
+        }
+    }
+}
