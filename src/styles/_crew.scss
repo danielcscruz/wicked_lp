@@ -11,6 +11,7 @@
         &__members{
             display: flex;
             overflow-x: scroll;
+            scrollbar-color: transparent transparent;
 
             &__member{
                 display: block;
